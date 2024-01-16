@@ -13,3 +13,30 @@ var_dump($exploded_array);
 $imploded_string = implode(",", $exploded_array);
 echo "\n implodeで繋げた文字列 \n";
 var_dump($imploded_string);
+
+
+
+//
+$colors = [
+    "Red",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Black",
+];
+//
+foreach($colors as $v) {
+    echo "{$v} \n";
+}
+//
+$colors = [
+    "Red" => "#ff0000",
+    "Yellow" => "#ffff00",
+    "Green" => "#00ff00",
+    "Blue" => "#0000ff",
+    "Black" => "#000000",
+];
+//
+foreach($colors as $k => $v) {
+    echo "{$k}: {$v} \n";
+}
